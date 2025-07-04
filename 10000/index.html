@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nagad Deposit</title>
+  <link rel="stylesheet" href="/Assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <h1>Nagad Deposit</h1>
+      <div class="timer">বাকি সময়<br><strong id="countdown">00:09:52</strong></div>
+      <div class="amount">৳১০,০০০</div>
+      <div class="warning">অনুগ্রহ করে পরিমাণ পরিবর্তন করবেন না</div>
+    </div>
+    <div class="right">
+<div class="step">
+  <h3>ধাপ ১: অ্যাকাউন্ট কপি করুন</h3>
+  <div class="account-display">
+    <span id="accountNumber">01824409728</span>
+    <button class="btn" onclick="copyAccount(event)"">কপি</button>
+  </div>
+</div>
+<div class="step">
+  <h3>ধাপ ২: লেনদেন আইডি প্রদান করুন</h3>
+  <div class="input-group">
+    <input id="txidInput" type="text" placeholder="লেনদেন আইডি (Ex. 73SHY8XI)" required />
+  </div>
+  <button class="btn" type="button" onclick="submitTxid()">জমা দিন</button>
+  <div class="bottom-info" style="text-align: center;">🚀 সম্পূর্ণ নতুন আপগ্রেড</div>
+</div>
+      <div class="bottom-info" style="text-align: center;">
+         🔐 নগদ নিরপদ পেমেন্ট সিস্টেম 
+      </div>
+      <div class="logo">
+        <img src="/Assets/Images/lend-BVKNtpoJ.png" alt="Nagad Logo" />
+      </div>
+    </div>
+  </div>
+  <script src="/Assets/script.js"></script>
+</body>
+</html>

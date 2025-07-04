@@ -1,0 +1,136 @@
+ * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body {
+      background: #f5f5f5;
+      color: #333;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 20px auto;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .left {
+      background: linear-gradient(to bottom, #ef5b25, #fcb016);
+      color: white;
+      flex: 1;
+      padding: 40px 20px;
+      text-align: center;
+      min-width: 300px;
+    }
+    .left h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    .left .amount {
+      font-size: 40px;
+      margin: 20px 0;
+    }
+    .left .timer {
+      font-size: 16px;
+    }
+    .left .warning {
+      margin-top: 20px;
+      background: rgba(255,255,255,0.2);
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    .right {
+      flex: 1;
+      padding: 30px;
+      min-width: 300px;
+    }
+    .step {
+      margin-bottom: 25px;
+    }
+    .step h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .input-group {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .input-group input {
+      flex: 1;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .btn {
+      background: #ef5b25;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      width: 100%;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #b83d15;
+    }
+    .bottom-info {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #555;
+    }
+
+.account-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  #accountNumber {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 2px solid #000000;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+#countdown{
+    font-size: 2rem;
+}
+
+
+    .logo {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .logo img {
+      height: 40px;
+    }
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .left, .right {
+        padding: 20px;
+      }
+    }
